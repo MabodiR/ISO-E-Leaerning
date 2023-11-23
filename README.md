@@ -1,42 +1,94 @@
-# E-Learning Platform
-
-Welcome to E-Learning Platform - Your Gateway to ISO Mastery!
-
-## Overview
-
-E-Learning Platform is an online learning hub dedicated to providing high-quality courses on various ISO standards. Whether you're an individual seeking to enhance your skills or an organization aiming for compliance and excellence, our platform offers a comprehensive learning experience.
-
-## Features
-
-- **Comprehensive Courses:** Explore in-depth courses covering ISO standards such as Quality Management (ISO 9001:2015), Information Security (ISO/IEC 27001:2013), Environmental Management (ISO 14001:2015), and more.
-
-- **Interactive Learning:** Engage with our interactive content, including videos, practical exercises, and real-world case studies designed to make complex concepts accessible.
-
-- **Expert Guidance:** Learn from industry experts and professionals who provide practical insights and best practices.
-
-- **Flexible Learning:** Access courses anytime, anywhere, and progress at your own pace with our flexible online platform.
-
-- **Certification and Recognition:** Validate your knowledge with industry-recognized certifications to boost your career.
+# ISO E-Learning System
+### Welcome to the ISO E-Learning System, an online platform for ISO courses with categories, comments, and ratings. This system is built using Laravel and utilizes MySQL as the database.
 
 ## Getting Started
+### Prerequisites
+Before you begin, ensure that you have the following installed:
 
-<!-- ### Installation
-
-1. [Clone the repository]
-2. [Install dependencies]
-3. [Configure your environment] -->
-
-### Usage
-
-1. 
-2. 
-3. 
-4. 
+1. PHP (>= 7.4)
+2. Composer
+3. MySQL
+4. [Web Server](https://www.apache.org/ or https://nginx.org/)
 
 
-## Support
+bash
+Copy code
+cd iso-elearning-system
+Install PHP dependencies:
 
-If you have any questions, issues, or feedback, please [open an issue] or contact our support team at [rofhiwa.mabodi@gmail.com].
+bash
+Copy code
+composer install
+Install JavaScript dependencies:
 
+bash
+Copy code
+npm install
+Copy the .env.example file to .env:
 
-E-Learning Platform - Shaping a future where knowledge meets compliance, and success becomes a standard.
+bash
+Copy code
+cp .env.example .env
+Configure the .env file with your MySQL database and other settings.
+
+Generate the application key:
+
+bash
+Copy code
+php artisan key:generate
+Run migrations and seed the database:
+
+bash
+Copy code
+php artisan migrate --seed
+Compile frontend assets:
+
+bash
+Copy code
+npm run dev
+Serve the application:
+
+bash
+Copy code
+php artisan serve
+The application will be available at http://localhost:8000.
+
+## Features
+Authentication: Users can register and log in.
+Course Management: Instructors can add, edit, and view courses.
+Rating and Comments: Users can rate and comment on courses.
+Categories: Courses are categorized for better organization.
+## Usage
+### Login
+1. Visit the login page.
+
+2. Use the following credentials:
+
+-- Student:
+
+Email: student@wwise.co.za
+Password: password
+-- Instructor:
+
+Email: instructor@wwise.co.za
+Password: password
+## Registration
+1. Visit the registration page.
+2. Complete the registration form.
+## Courses
+### View Courses
+Navigate to the courses page.
+Browse and view available courses.
+## Add Course
+Log in as an instructor.
+Navigate to the "Add Course" page.
+Fill in the course details and submit the form.
+### Edit Course
+Log in as an instructor.
+Navigate to the "Edit Course" page.
+Modify the course details and submit the form.
+### Rate and Comment
+Log in as a student.
+View a course.
+Rate the course using the provided form.
+Leave a comment about the course.
