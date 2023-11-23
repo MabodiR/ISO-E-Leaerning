@@ -29,25 +29,45 @@
 	<!-- End of footer section
 		============================================= -->
 
-
-
 		<!-- For Js Library -->
-		<script src="assets/js/jquery-2.1.4.min.js"></script>
-		<script src="assets/js/bootstrap.min.js"></script>
-		<script src="assets/js/popper.min.js"></script>
-		<script src="assets/js/owl.carousel.min.js"></script>
-		<script src="assets/js/jarallax.js"></script>
-		<script src="assets/js/jquery.magnific-popup.min.js"></script>
-		<script src="assets/js/lightbox.js"></script>
-		<script src="assets/js/jquery.meanmenu.js"></script>
-		<script src="assets/js/scrollreveal.min.js"></script>
-		<script src="assets/js/jquery.counterup.min.js"></script>
-		<script src="assets/js/waypoints.min.js"></script>
-		<script src="assets/js/jquery-ui.js"></script>
-		<script src="assets/js/gmap3.min.js"></script>
-		<script src="assets/js/switch.js"></script>
-		<script src="http://maps.google.com/maps/api/js?key=AIzaSyC61_QVqt9LAhwFdlQmsNwi5aUJy9B2SyA"></script>
+		<script src="{{ asset('assets/js/jquery-2.1.4.min.js') }}"></script>
+		<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+		<script src="{{ asset('assets/js/popper.min.js') }}"></script>
+		<script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
+		<script src="{{ asset('assets/js/jarallax.js') }}"></script>
+		<script src="{{ asset('assets/js/jquery.magnific-popup.min.js') }}"></script>
+		<script src="{{ asset('assets/js/lightbox.js') }}"></script>
+		<script src="{{ asset('assets/js/jquery.meanmenu.js') }}"></script>
+		<script src="{{ asset('assets/js/scrollreveal.min.js') }}"></script>
+		<script src="{{ asset('assets/js/jquery.counterup.min.js') }}"></script>
+		<script src="{{ asset('assets/js/waypoints.min.js') }}"></script>
+		<script src="{{ asset('assets/js/jquery-ui.js') }}"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
-		<script src="assets/js/script.js"></script>
+		<script src="{{ asset('assets/js/auth/login.js') }}"></script>
+		<script src="{{ asset('assets/js/categories.js') }}"></script>
+		<script src="{{ asset('assets/js/courses.js') }}"></script>
+		<script src="{{ asset('assets/js/filterByCategory.js') }}"></script>
+		<script src="{{ asset('assets/js/toggle.js') }}"></script>
+		<script src="{{ asset('assets/js/mycourses.js') }}"></script>
+		<script src="{{ asset('assets/js/rating.js') }}"></script>
+		<script src="{{ asset('assets/js/comments.js') }}"></script>
+		<script src="{{ asset('assets/js/auth/register.js') }}"></script>
+		<script src="{{ asset('assets/js/script.js') }}"></script>
+	
+		<script>
+			// Check if a success message exists in the session
+			@if(session('success'))
+				// Display the success toast message
+				toastr.success('{{ session('success') }}');
+			@endif
+		</script>
+		<script>
+			// Check if a error message exists in the session
+			@if(session('error'))
+				// Display the success toast message
+				toastr.error('{{ session('error') }}');
+			@endif
+		</script>
 	</body>
 	</html>
