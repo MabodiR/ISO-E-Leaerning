@@ -64,11 +64,11 @@ Categories: Courses are categorized for better organization.
 
 2. Use the following credentials:
 
--- Student:
+#### Student:
 
 Email: student@wwise.co.za
 Password: password
--- Instructor:
+####  Instructor:
 
 Email: instructor@wwise.co.za
 Password: password
@@ -77,18 +77,18 @@ Password: password
 2. Complete the registration form.
 ## Courses
 ### View Courses
-Navigate to the courses page.
-Browse and view available courses.
+1. Navigate to the courses page.
+2. Browse and view available courses.
 ## Add Course
-Log in as an instructor.
-Navigate to the "Add Course" page.
-Fill in the course details and submit the form.
+1. Log in as an instructor.
+2. Navigate to the "Add Course" page.
+3. Fill in the course details and submit the form.
 ### Edit Course
-Log in as an instructor.
-Navigate to the "Edit Course" page.
-Modify the course details and submit the form.
+1. Log in as an instructor.
+2. Navigate to the "Edit Course" page.
+3. Modify the course details and submit the form.
 ### Rate and Comment
-Log in as a student.
-View a course.
-Rate the course using the provided form.
-Leave a comment about the course.
+1. Log in as a student.
+2. View a course.
+3. Rate the course using the provided form.
+4. Leave a comment about the course.
