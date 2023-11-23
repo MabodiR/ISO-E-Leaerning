@@ -149,11 +149,11 @@
 		width: 100%;
 		text-align: center;
 	}
-	.category-slide .owl-nav .owl-next,
+	/* .category-slide .owl-nav .owl-next,
 	.category-slide .owl-nav .owl-prev {
 		float: none;
 		display: inline-block;
-	}
+	} */
 	.course-page-section #tab2 {
 		display: none !important;
 	}
